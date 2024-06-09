@@ -64,6 +64,29 @@ Task-2/
 ```
   npm run start
 ```
+
+### Создание таблицы пользователей
+
+Создайте таблицу пользователей в PostgreSQL с помощью следующего скрипта:
+```
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    age INT,
+    gender VARCHAR(50),
+    has_issues BOOLEAN
+);
+```
+### Заполнение таблицы с помощью миграции
+
+Используйте команду:
+
+```
+npm run typeorm migration:run
+```
+Либо с revert, чтобы откатить изменения.
+
 ## API Endpoints
 
 Сервис работает на стандарнтом порту 3000. При использовании команды set-issues-false, сервис возвращает количество пользователей, у которых был флаг проблемы, равный true, и флаг проблемы устанавливается в false.
