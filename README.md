@@ -33,7 +33,7 @@ Task-2/
 ├── ormconfig.json
 ├── package.json
 ├── package-lock.json
-└── 1717875309623-SeedUsers_migrations.ts
+└── 1717875309623-SeedUsers_migrations.ts - файл кода миграции
 ```
 
 ## Установка и запуск
